@@ -111,6 +111,7 @@ const newEmployee = async (req, res, next) => {
       family,
       images,
     } = req.body.data;
+    console.log(req.body.data);
     const createdEmployee = await Employee.create({
       firstname,
       lastname,
